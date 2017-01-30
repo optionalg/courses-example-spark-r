@@ -12,8 +12,7 @@ asdf
 
 *** =pre_exercise_code
 ```{r}
-library(sparklyr)
-sc <- spark_connect(master = "local")
+
 ```
 
 *** =sample_code
