@@ -2,7 +2,7 @@
 title       : Insert the chapter title here
 description : Insert the chapter description here
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:8fa7e2d6ac
 ## More movies
 
 asdf
