@@ -24,12 +24,10 @@ sc <- spark_connect(master = "local")
 # sc is available
 
 # Copy some data into spark cluster
-library(dplyr)
 iris_tbl <- copy_to(sc, iris)
-flights_tbl <- copy_to(sc, nycflights13::flights, "flights")
 
 # filtering example
-flights_tbl %>% filter(dep_delay == 2)
+iris_tbl %>% filter(Sepal_Length > 4)
 ```
 
 *** =solution
