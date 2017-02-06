@@ -14,6 +14,7 @@ The pre exercise code connects to a local spark cluster, and stores this connect
 
 *** =pre_exercise_code
 ```{r}
+'___BLOCK_SOLUTION_EXEC___'
 library(sparklyr)
 sc <- spark_connect(master = "local")
 ```
