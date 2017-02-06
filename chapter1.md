@@ -23,6 +23,9 @@ sc <- spark_connect(master = "local")
 ```{r}
 # sc is available
 
+# Load dplyr
+library(dplyr)
+
 # Copy some data into spark cluster
 iris_tbl <- copy_to(sc, iris)
 
