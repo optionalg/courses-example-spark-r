@@ -2,4 +2,4 @@
 
 Example course to showcase support for Spark on DataCamp.
 
-This course is linked to teach.
+This course is linked to teach as `courses-testing-spark`.
