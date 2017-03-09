@@ -25,8 +25,8 @@ library(sparklyr)
 # Load dplyr
 library(dplyr)
 
-# Reference iris data (at )
-iris_tbl <- iris
+# Replace to use spark on csv data
+iris_tbl <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3156/datasets/iris.csv")
 
 # filtering example
 iris_tbl %>% filter(Sepal_Length > 4)
