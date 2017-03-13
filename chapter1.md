@@ -13,32 +13,31 @@ Sparklyr example
 *** =pre_exercise_code
 ```{r}
 '___BLOCK_SOLUTION_EXEC___'
-library(sparklyr)
-# Connect to remove cluster.
-# sc <- spark_connect(master = "local")
 ```
 
 *** =sample_code
 ```{r}
-# sc is available
+# Set up
+library(sparklyr)
+sc <- spark_connect(master = "local")
 
-# Load dplyr
+# Copy data to cluster
+iris_tbl <- copy_to(sc, iris)
+
+# Filtering example
 library(dplyr)
-
-# Replace to use spark on csv data
-iris_tbl <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3156/datasets/iris.csv")
-
-# filtering example
 iris_tbl %>% filter(Sepal_Length > 4)
+
+# Close connection
+spark_disconnect(sc)
 ```
 
 *** =solution
 ```{r}
-# sc is available
-
+# empty
 ```
 
 *** =sct
 ```{r}
-success_msg("Good work!")
+success_msg("That's it")
 ```

@@ -3,7 +3,6 @@ instructors      :
  - filip.schouwenaars@gmail.com
  - ward+datacamp@in4it.io
 description      : Example course for R and Spark
-university       : DataCamp
 difficulty_level : 2
 time_needed      : 1 hour
-from             : 'r-spark-prod:4'
+from             : 'r-spark-prod:8'
